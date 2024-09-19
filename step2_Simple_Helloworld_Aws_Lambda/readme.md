@@ -207,3 +207,12 @@ zip -r lambda/hello.zip lambda/hello.js
 Now Terraform can deploy the zipped code to AWS.
 
 
+
+**NOTE:**  Set your environment variables:  
+In your terminal, you can export the AWS credentials like this: 
+Environment variables should be start with **TF_VAR_your_variable_name**
+```python
+export TF_VAR_AWS_ACCESS_KEY_ID="ACCESS_KEY"
+export TF_VAR_AWS_SECRET_ACCESS_KEY="SECRET_ACCESS"
+
+
